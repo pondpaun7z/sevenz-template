@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+ENV["PORT"] ||= "3000"
+
+exec "bundle", "exec", "foreman", "start", "-f", "Procfile.dev", *ARGV
