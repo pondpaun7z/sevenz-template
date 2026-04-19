@@ -37,11 +37,11 @@ export default defineConfig({
       dts: path.join(jsRoot, 'components.d.ts'),
     }),
     Pages({
-      dirs: 'app/javascript/pages',
+      dirs: path.join(jsRoot, 'pages'),
     }),
     Layouts({
-      layoutsDirs: 'app/javascript/layouts',
-      pagesDirs: 'app/javascript/pages',
+      layoutsDirs: path.join(jsRoot, 'layouts'),
+      pagesDirs: path.join(jsRoot, 'pages'),
     }),
     RubyPlugin(),
   ],
