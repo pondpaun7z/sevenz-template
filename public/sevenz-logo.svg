@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sevenz Studio logo</title>
+  <desc id="desc">A modern geometric Sevenz Studio mark with a stylized number seven.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="54" x2="430" y2="452" gradientUnits="userSpaceOnUse"><stop stop-color="#24201D"/><stop offset="0.58" stop-color="#161210"/><stop offset="1" stop-color="#102525"/></linearGradient>
+    <linearGradient id="red" x1="150" y1="130" x2="293" y2="392" gradientUnits="userSpaceOnUse"><stop stop-color="#FF7058"/><stop offset="1" stop-color="#EC2F20"/></linearGradient>
+    <linearGradient id="amber" x1="294" y1="128" x2="188" y2="383" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD47A"/><stop offset="1" stop-color="#FF9B2F"/></linearGradient>
+    <filter id="shadow" x="88" y="97" width="338" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="16"/><feGaussianBlur stdDeviation="14"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0.949 0 0 0 0 0.314 0 0 0 0 0.208 0 0 0 0.24 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/><rect x="30" y="30" width="452" height="452" rx="76" stroke="#FFF8EF" stroke-opacity="0.08" stroke-width="2"/>
+  <path d="M392 109L421 138" stroke="#44B8B2" stroke-opacity="0.42" stroke-width="14" stroke-linecap="round"/><path d="M95 407L124 436" stroke="#F25035" stroke-opacity="0.34" stroke-width="14" stroke-linecap="round"/>
+  <g filter="url(#shadow)"><path d="M126 134H386L259 378H149L245 194H126V134Z" fill="url(#red)"/><path d="M286 134H386L259 378H149L181 317H223L286 194V134Z" fill="url(#amber)"/><path d="M126 134H386L354 194H126V134Z" fill="#FFF8EF"/></g>
+  <path d="M126 134H386" stroke="#FFF8EF" stroke-opacity="0.28" stroke-width="2"/><path d="M125 401H302" stroke="#FFF8EF" stroke-width="26" stroke-linecap="round"/><path d="M321 401H354" stroke="#44B8B2" stroke-width="26" stroke-linecap="round"/><circle cx="366" cy="354" r="28" fill="#FFF8EF"/><circle cx="366" cy="354" r="10" fill="#44B8B2"/>
+</svg>
