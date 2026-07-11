@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 import RubyPlugin from 'vite-plugin-ruby'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -13,6 +14,7 @@ const jsRoot = path.resolve(__dirname, 'app/javascript')
 
 export default defineConfig({
   plugins: [
+    tailwindcss(),
     vue(),
     AutoImport({
       imports: [
