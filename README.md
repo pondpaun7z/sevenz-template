@@ -43,6 +43,8 @@ Then open [http://localhost:3000](http://localhost:3000). The root route serves 
 
 ## Tests
 
+See [file storage setup](docs/STORAGE.md) for Active Storage, model/record folders, image thumbnails, `/storage` URLs, and S3-compatible cloud configuration.
+
 ```bash
 bin/rails test
 bin/rails test:system   # Capybara + Selenium (requires drivers)
