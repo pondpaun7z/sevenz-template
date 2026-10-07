@@ -4,8 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import RubyPlugin from 'vite-plugin-ruby'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts-next'
+import VueRouter from 'vue-router/vite'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -15,6 +14,7 @@ const jsRoot = path.resolve(__dirname, 'app/javascript')
 export default defineConfig({
   plugins: [
     tailwindcss(),
+    VueRouter({ routesFolder: path.join(jsRoot, 'pages'), dts: false }),
     vue(),
     AutoImport({
       imports: [
@@ -37,13 +37,6 @@ export default defineConfig({
     Components({
       dirs: [path.join(jsRoot, 'components')],
       dts: path.join(jsRoot, 'components.d.ts'),
-    }),
-    Pages({
-      dirs: path.join(jsRoot, 'pages'),
-    }),
-    Layouts({
-      layoutsDirs: path.join(jsRoot, 'layouts'),
-      pagesDirs: path.join(jsRoot, 'pages'),
     }),
     RubyPlugin(),
   ],
