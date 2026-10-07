@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   scan_ruby:
     runs-on: ubuntu-latest
@@ -37,7 +40,7 @@ jobs:
           bundler-cache: true
 
       - name: Set up Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "22"
           cache: "npm"
@@ -47,6 +50,9 @@ jobs:
 
       - name: Scan for security vulnerabilities in JavaScript dependencies
         run: npm audit --audit-level=high
+
+      - name: Check file routing and layouts
+        run: node --test test/frontend/routing_test.mjs
 
   lint:
     runs-on: ubuntu-latest

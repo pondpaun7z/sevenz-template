@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import { setupLayouts } from 'virtual:generated-layouts'
-import generatedRoutes from '~pages'
+import { routes as generatedRoutes } from 'vue-router/auto-routes'
+import { setupLayouts } from '@/router/layouts'
 import { createPinia } from 'pinia'
 
 import App from '@/App.vue'
