@@ -37,8 +37,8 @@ Then open [http://localhost:3000](http://localhost:3000). The root route serves 
 ## Front-end layout
 
 - **Entry:** `app/javascript/entrypoints/application.ts`
-- **Pages:** `app/javascript/pages/` (via `vite-plugin-pages`)
-- **Layouts:** `app/javascript/layouts/`
+- **Pages:** `app/javascript/pages/` (via Vue Router's built-in `vue-router/vite` plugin)
+- **Layouts:** `app/javascript/layouts/`, discovered with Vite's `import.meta.glob`. Pages use `default.vue`; set route metadata `layout` to another layout name or `false` to disable it.
 - **Stores:** `app/javascript/stores/`
 
 ## Tests
@@ -46,6 +46,7 @@ Then open [http://localhost:3000](http://localhost:3000). The root route serves 
 ```bash
 bin/rails test
 bin/rails test:system   # Capybara + Selenium (requires drivers)
+node --test test/frontend/routing_test.mjs
 ```
 
 ## Linting and security (development)

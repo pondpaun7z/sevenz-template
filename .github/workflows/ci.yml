@@ -51,6 +51,9 @@ jobs:
       - name: Scan for security vulnerabilities in JavaScript dependencies
         run: npm audit --audit-level=high
 
+      - name: Check file routing and layouts
+        run: node --test test/frontend/routing_test.mjs
+
   lint:
     runs-on: ubuntu-latest
     env:
